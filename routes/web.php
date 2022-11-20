@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +38,10 @@ Route::get('/rdv', function () {
 Route::get('/tarif', function () {
     return view('pages.tarif');
 })->name("tarif");
+
+Route::get('/blog', [BlogController::class, 'index'])->name("blog");
+
+Route::resource ('blogs', BlogController::class);
 
 // secondary pages 
 Route::get('/secondary/onesession', function () {

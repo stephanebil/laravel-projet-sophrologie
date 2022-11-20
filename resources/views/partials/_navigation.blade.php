@@ -25,7 +25,7 @@
                 <a href="{{ route('lasophrologie') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">La Sophrololgie</a>
                 <a href="{{ route('rdv') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Prendre RDV</a>
                 <a href="{{ route('tarif') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Tarif</a>
-                <a href="/" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300 ">Blog</a>
+                <a href="{{ route('blog') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300 ">Blog</a>
             @endguest
             @auth    
                 <a href="{{ route('dashboard') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Dashboard</a>
