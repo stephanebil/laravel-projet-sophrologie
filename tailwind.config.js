@@ -19,8 +19,8 @@ module.exports = {
                 goldfirst: "#C3994D",
                 bluehover: "#093d53",
                 goldhover: "#f8d696",
+                graybg: "#ecedee",
 
-                whiteportfolio: "#ffffff",
                 violetnav: "#8583e1",
             },
         },

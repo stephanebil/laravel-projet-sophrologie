@@ -1,17 +1,14 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
+<x-layouts.main-layout title="Bienvenue sur le Dashboard" >
+    <div class="py-32 md:px-20 px-6">
+        <h1 class="text-center font-bold text-bluefirst text-lg sm:text-xl md:text-2xl lg:text-4xl ">Bienvenue sur votre tableau de bord!</h1>
+        <p class="my-10 text-center bg-goldfirst p-2 md:text-lg text-bluefirst rounded-xl text-xs sm:w-[50%] md:ml-[25%] sm:ml-[20%] ">Bonjour <span class="font-bold">{{ Auth::user()->name }}</span>, Ravi de vous revoir!</p>
+        <div class="py-10">  
+            <div class="py-4">
+                {{-- <x-items.buttonsophro title="Ajouter un Post du blog" href="{{ route('blogs.create') }}" /> --}}
             </div>
-        </div>
+            <div class="py-4">
+                {{-- <x-items.buttonsophro title="Modifier un Post du blog" href="{{ route('blogs.edit') }}" /> --}}
+            </div>
+        </div> 
     </div>
-</x-app-layout>
+</x-layouts.main-layout>

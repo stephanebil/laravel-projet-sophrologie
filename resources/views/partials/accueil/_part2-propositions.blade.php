@@ -1,4 +1,4 @@
-<section class="bg-[#ecedee] ">
+<section class="bg-graybg ">
     <div class="px-6 md:px-20 pb-20 py-6 md:py-20">
         <x-items.h2sophro title="Comment ça se passe?"/>
         <div class=" grid grid-flow-row-dense sm:grid-flow-row-dense sm:grid-cols-3 gap-20  justify-between items-center py-8 md:py-32 ">

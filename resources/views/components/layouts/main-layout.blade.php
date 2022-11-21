@@ -11,8 +11,15 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    @include('partials._navigation')
-    <div class="flex flex-col min-h-screen">
+    <div class="relative">
+        @include('partials._navigation')
+        {{-- message de confirmation --}}
+        <div class=" absolute z-100 mt-32 rounded-lg ml-6 sm:ml-[25%] text-center w-52 bg-green-500 text-green-100">
+            {{ Session::get('status') }}
+        </div>
+    </div>
+    
+    <div class="flex flex-col ">
         <main className='flex-grow bg-[#fffcfa]'>{{ $slot }}</main>
     </div>
     
