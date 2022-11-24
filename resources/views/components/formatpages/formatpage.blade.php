@@ -24,7 +24,7 @@
 <section class="bg-graybg px-20">   
     <div class="md:flex md:space-x-16 text-center py-16 md:py-20 justify-center ">
         <div class="py-4">
-            <x-items.buttonsophro title="contactez moi" href="{{ route('contact') }}"/> 
+            <x-items.buttonsophro title="contactez moi" href="{{ route('listcontacts.create') }}"/> 
         </div>
         <div class="py-4">
             <x-items.buttonsophro href="{{ route('rdv') }}" title="Prendre RDV" />

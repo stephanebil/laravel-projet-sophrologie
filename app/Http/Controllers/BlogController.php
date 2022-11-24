@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -25,7 +26,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.createBlog');
     }
 
     /**
@@ -36,7 +37,27 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // validation du formulaire
+        $request->validate([
+            'title'=> 'required|max:255',
+            'content'=>'required|max:2000',
+            'url_img'=> 'required|max:2000|mimes:png,jpg',
+            'author'=> 'required|max:255',
+        ]);
+
+        $validateImg = $request->file('url_img')->store('cover');
+
+        Blog::create([
+            'title' => $request->title,
+            'content' => $request->content,
+            'url_img' => $validateImg,
+            'author' => $request->author,
+            'created_at' =>now()
+        ]);
+
+        // redirect
+        return redirect()->route('blog')->with('status', 'Post enregistré');
+        
     }
 
     /**
@@ -56,9 +77,9 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Blog $blog)
     {
-        //
+         return view('pages.editBlog', compact('blog'));
     }
 
     /**
@@ -68,9 +89,35 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Blog $blog)
     {
-        //
+        // validate form
+         $request->validate([
+            'title'=> 'required|max:255',
+            'content'=>'required|max:2000',
+            'url_img'=> 'required|sometimes|max:2000|mimes:png,jpg',
+            'author'=> 'required|max:255',
+        ]);
+
+        // 2 if image
+        if ($request->hasFile('url_img')){
+        //delete the images
+        Storage::delete($blog->url_img);
+        // store new image in storage
+        $blog->url_img = $request->file('url_img')->store('cover');
+        }
+
+        //3 update and store to DB
+        $blog->update([
+            'title' => $request->title,
+            'content' => $request->content,
+            'url_img' => $blog->url_img,
+            'author' => $request->author,
+            'created_at' =>now()
+        ]);
+
+        //4 redirect
+        return redirect()->route('blogs.show', $blog->id)->with("status", 'modification réussie');
     }
 
     /**

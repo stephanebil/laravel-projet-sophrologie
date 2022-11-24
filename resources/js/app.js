@@ -15,9 +15,9 @@ const toggledMenu = document.querySelector("#toggled-menu");
 toggleMenuBtn.addEventListener("click", toggleNav);
 
 function toggleNav() {
-    toggledMenu.classList.toggle("-translate-y-[400px]");
+    toggledMenu.classList.toggle("-translate-y-[500px]");
 
-    if (toggledMenu.classList.contains("-translate-y-[400px]")) {
+    if (toggledMenu.classList.contains("-translate-y-[500px]")) {
         // toggleMenuImg.setAttribute("src", "images/menu.svg");
         toggleMenuBtn.setAttribute("aria-expanded", "false");
     } else {

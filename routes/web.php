@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ListContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,8 +41,10 @@ Route::get('/tarif', function () {
 })->name("tarif");
 
 Route::get('/blog', [BlogController::class, 'index'])->name("blog");
-
 Route::resource ('blogs', BlogController::class);
+
+Route::get('/listContact', [ListContactController::class, 'index'])->name("listContact");
+Route::resource('listcontacts', ListContactController::class);
 
 // secondary pages 
 Route::get('/secondary/onesession', function () {

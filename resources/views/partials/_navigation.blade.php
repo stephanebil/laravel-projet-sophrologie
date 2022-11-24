@@ -18,7 +18,7 @@
         </div>
     </div>
     {{-- menu --}}
-    <div class="w-full bg-bluefirst absolute left-0 -translate-y-[400px] py-4 px-[35%] lg:px-0 -z-10 lg:visible uppercase text-xs flex flex-col lg:flex-row lg:static   lg:z-10 lg:w-[75%] xl:w-[65%] lg:transform-none  justify-between" id="toggled-menu">
+    <div class="w-full bg-bluefirst absolute left-0 -translate-y-[500px] py-4 px-[35%] lg:px-0 -z-10 lg:visible uppercase text-xs flex flex-col lg:flex-row lg:static   lg:z-10 lg:w-[75%] xl:w-[65%] lg:transform-none  justify-between" id="toggled-menu">
         <div class="grid lg:flex  ">
             
                 <a href="{{ route('quisuisje') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300 {{ Request::is('pages/quisuisje') ? ' active:bg-bluehover ':'' }}">Qui suis je?</a>
@@ -26,14 +26,14 @@
                 <a href="{{ route('rdv') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Prendre RDV</a>
                 <a href="{{ route('tarif') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Tarif</a>
                 <a href="{{ route('blog') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300 ">Blog</a>
-            
+                {{-- <a href="{{ route('register') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Inscription</a> --}}
             @auth    
                 <a href="{{ route('dashboard') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Dashboard</a>
             @endauth
         </div>
         <div class="grid lg:flex ">
             
-                <a href="{{ route('contact') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Contactez Moi</a>
+                <a href="{{ route('listcontacts.create') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Contactez Moi</a>
             @guest
                 <a href="{{ route('dashboard') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300">Connexion</a>
             @endguest    

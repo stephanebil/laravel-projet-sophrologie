@@ -6,7 +6,7 @@
         </div>
         <div class="absolute top-0 z-10 mt-[45%] md:mt-[35%] lg:mt-[20%]">    
             <div class=" text-center">
-                <h1 class='text-sm md:text-2xl bg-goldfirst bg-opacity-60 lg:text-4xl py-2 px-2 md:py-8 md:px-8 rounded-xl font-black text-bluefirst'>Bienvenue sur Valérie Delcourt Sophrologie</h1>
+                <h1 class='text-sm md:text-2xl bg-goldfirst bg-opacity-60 lg:text-4xl py-2 px-2 md:py-8 md:px-8 rounded-xl font-black text-bluefirst'>Valérie Delcourt Sophrologie vous souhaite la bienvenue</h1>
             </div>    
             <div class="text-center mt-4 md:mt-20">
                 <x-items.buttonsophro href="{{ route('rdv') }}" title="Prendre RDV" />
