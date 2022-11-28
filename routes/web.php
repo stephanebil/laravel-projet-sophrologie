@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ListContactController;
+use App\Http\Controllers\ListGroupController;
+use App\Http\Controllers\ListIndividualController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,6 +47,12 @@ Route::resource ('blogs', BlogController::class);
 
 Route::get('/listContact', [ListContactController::class, 'index'])->name("listContact");
 Route::resource('listcontacts', ListContactController::class);
+
+Route::get('/listIndividual', [ListIndividualController::class, 'index'])->name("listIndividual");
+Route::resource('listindividuals', ListIndividualController::class);
+
+Route::get('/listGroup', [ListGroupController::class, 'index'])->name("listGroup");
+Route::resource('listgroups', ListGroupController::class);
 
 // secondary pages 
 Route::get('/secondary/onesession', function () {

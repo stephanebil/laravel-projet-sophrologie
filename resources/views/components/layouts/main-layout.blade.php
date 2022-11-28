@@ -9,6 +9,15 @@
     <title>Valérie Delcourt Sophrologue | {{ $title }}</title>
     {{-- animation --}}
     <script src="https://unpkg.com/scrollreveal"></script>
+     {{-- <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> --}}
+     <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div class="relative">

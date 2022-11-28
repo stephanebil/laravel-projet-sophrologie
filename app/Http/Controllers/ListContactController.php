@@ -75,7 +75,7 @@ class ListContactController extends Controller
      */
     public function edit(ListContact $listcontact)
     {
-        return view('pages.editContact', compact('listcontact'));//
+        return view('pages.editContact', compact('listcontact'));
     }
 
     /**

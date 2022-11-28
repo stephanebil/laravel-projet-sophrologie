@@ -3,7 +3,7 @@
         <h1 class="text-center font-bold text-bluefirst text-lg sm:text-xl md:text-2xl lg:text-4xl">Liste des prises de contacts</h1>
         <div class="  ">
             <div class="">
-                @props(['name', 'email', 'message'])
+                @props(['name', 'email'])
             <!-- table -->
                 <div class="overflow-x-auto mt-16 ">
                     <table class="table w-full border-8">
@@ -23,7 +23,9 @@
                                 <tr class="hover:text-blue-500 border-2 h-16 text-center">
                                     <th> {{ $listcontact->id }} </th>
                                     <td> {{ $listcontact->name }} </td>
-                                    <td> {{ $listcontact->email }} </td>
+                                    <td>
+                                        <a href="https://accounts.google.com/" target="_blank" class="">{{ $listcontact->email }}</a>  
+                                    </td>
                                     <td>
                                         <a href="listcontacts/{{ $listcontact->id }}" class="hover:font-bold hover:text-xl">voir</a>
                                     </td>

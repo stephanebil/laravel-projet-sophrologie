@@ -10,10 +10,10 @@
             </div>
             <div class="py-8 md:py-0">
                 <div class="py-4">
-                    <x-items.buttonsophro title="Liste des RDV individuels" href="/" />
+                    <x-items.buttonsophro title="Liste des RDV individuels" href="{{ route('listindividuals.index') }}" />
                 </div>
                 <div class="py-4">
-                    <x-items.buttonsophro title="Liste des RDV en groupe" href="/" />
+                    <x-items.buttonsophro title="Liste des RDV en groupe" href="{{ route('listgroups.index') }}" />
                 </div>
                 <div class="py-4">
                     <x-items.buttonsophro title="Liste des prises de contacts" href="{{ route('listcontacts.index') }}" />

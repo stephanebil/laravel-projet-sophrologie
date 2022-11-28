@@ -1,4 +1,4 @@
-<nav class="lg:flex justify-between bg-bluefirst text-goldfirst items-center py-5 px-6 w-full md:px-20 fixed z-50  top-0 ">
+<nav class="lg:flex lg:justify-between bg-bluefirst text-goldfirst items-center py-5 px-6 w-full md:px-20 fixed z-50  top-0 ">
     <div class="flex justify-between items-center">
         {{-- logo --}}
         <div class="text-xl font-bold text-center px-2 py-1 border-2 border-goldfirst rounded-lg bg-bluefirst">
@@ -18,7 +18,7 @@
         </div>
     </div>
     {{-- menu --}}
-    <div class="w-full bg-bluefirst absolute left-0 -translate-y-[500px] py-4 px-[35%] lg:px-0 -z-10 lg:visible uppercase text-xs flex flex-col lg:flex-row lg:static   lg:z-10 lg:w-[75%] xl:w-[65%] lg:transform-none  justify-between" id="toggled-menu">
+    <div class="w-full bg-bluefirst absolute left-0 -translate-y-[500px] py-4 px-[35%] lg:px-0 -z-10 lg:visible uppercase text-xs flex flex-col lg:flex-row lg:static   lg:z-10 lg:w-[75%] xl:w-[65%] lg:transform-none justify-between " id="toggled-menu">
         <div class="grid lg:flex  ">
             
                 <a href="{{ route('quisuisje') }}" class="hover:text-goldhover hover:bg-bluehover px-3 py-2 rounded-lg duration-300 {{ Request::is('pages/quisuisje') ? ' active:bg-bluehover ':'' }}">Qui suis je?</a>

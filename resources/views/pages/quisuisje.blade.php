@@ -2,7 +2,7 @@
  
     <section class="px-6 md:px-20 pt-20 md:pt-32 md:pb-20 pb-6">
         <h1 class="py-20 font-bold text-xl text-center md:text-4xl lg:text-6xl text-bluefirst">Qui suis-je ?</h1>
-        <p class="text-center text-bluefirst ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate facilis, officiis delectus illum pariatur culpa sint tenetur quam, sapiente placeat recusandae, dolore sit! Impedit, aliquid temporibus consequatur repellendus reprehenderit fugiat consectetur quo culpa adipisci vero quod! Eveniet vitae, delectus distinctio commodi rerum reprehenderit ipsam fugit culpa nobis aut, fuga autem accusamus dolor magni natus!</p>
+        <p class="text-center text-bluefirst sm:px-10 md:px-20 lg:px-60 xl:px-72 ] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate facilis, officiis delectus illum pariatur culpa sint tenetur quam, sapiente placeat recusandae, dolore sit! Impedit, aliquid temporibus consequatur repellendus reprehenderit fugiat consectetur quo culpa adipisci vero quod! Eveniet vitae, delectus distinctio commodi rerum reprehenderit ipsam fugit culpa nobis aut, fuga autem accusamus dolor magni natus!</p>
     </section>
     <section class="bg-[#ecedee] px-6 md:px-20">   
         <h2 class="pt-10 pb-4 md:py-20 font-bold text-lg text-center md:text-2xl lg:text-4xl text-goldfirst">Sophrologue</h2>
