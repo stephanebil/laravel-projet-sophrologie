@@ -90,7 +90,13 @@ class ListGroupController extends Controller
      */
     public function update(Request $request, ListGroup $listgroup)
     {
-         // validation
+        $validated = 0;
+        if($request->has('is_validated')){
+            $validated=1;
+        }
+        
+        
+        // validation
         $request->validate([
             'name'=> 'required|max:255',
             'email'=> 'required|max:255',
@@ -106,7 +112,8 @@ class ListGroupController extends Controller
             'phone_number' => $request->phone_number,
             'address' => $request->address,
             'message' => $request->message,
-            'created_at' =>now()
+            'is_validated' => $validated,
+            'updated_at'=> now()
         ]);
 
         //redirect

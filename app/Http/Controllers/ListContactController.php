@@ -87,7 +87,12 @@ class ListContactController extends Controller
      */
     public function update(Request $request, ListContact $listcontact)
     {
-         // validation
+        $validated = 0;
+        if($request->has('is_validated')){
+            $validated=1;
+        }
+        
+        // validation
         $request->validate([
             'name'=> 'required|max:255|string',
             'email'=> 'required|max:255|string',
@@ -99,6 +104,7 @@ class ListContactController extends Controller
             'name'=>$request->name,
             'email' =>$request->email,
             'message' =>$request->message,
+            'is_validated' => $validated,
             'updated_at'=> now()
         ]);
 

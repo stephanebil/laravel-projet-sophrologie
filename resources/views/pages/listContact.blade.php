@@ -16,6 +16,7 @@
                                 <th>voir</th>
                                 <th>modifier</th>
                                 <th>Supprimer</th>
+                                <th>Traité</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,6 +38,11 @@
                                         {{-- delete --}}
                                         <x-items.btn-delete :item="$listcontact" routeItem="listcontacts.destroy" />
                                     </td>
+                                    @if ($listcontact->is_validated == 0)
+                                        <td><p class="text-red-500">Non</p></td>  
+                                    @else
+                                        <td> <p class="text-green-500">Oui</p></td>
+                                    @endif
                                 </tr>
                             @endforeach
                         </tbody>
