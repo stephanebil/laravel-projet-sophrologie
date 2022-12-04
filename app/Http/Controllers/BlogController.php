@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::orderBy('updated_at', 'DESC')->paginate(4);
-        return view('pages.blog', compact('blogs'));
+        return view('pages.blog.blog', compact('blogs'));
     }
 
     /**
@@ -26,7 +26,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('pages.createBlog');
+        return view('pages.blog.createBlog');
     }
 
     /**
@@ -68,7 +68,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        return view('pages.showBlog', compact('blog'));
+        return view('pages.blog.showBlog', compact('blog'));
     }
 
     /**
@@ -79,7 +79,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-         return view('pages.editBlog', compact('blog'));
+         return view('pages.blog.editBlog', compact('blog'));
     }
 
     /**

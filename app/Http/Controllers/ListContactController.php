@@ -16,7 +16,7 @@ class ListContactController extends Controller
     {
         $listcontacts = ListContact::orderBy('created_at', 'DESC')->paginate(10);
         
-        return view('pages.listContact', compact("listcontacts"));
+        return view('pages.contact.listContact', compact("listcontacts"));
     }
 
     /**
@@ -26,7 +26,7 @@ class ListContactController extends Controller
      */
     public function create()
     {
-        return view('pages.createContact');
+        return view('pages.contact.createContact');
     }
 
     /**
@@ -64,7 +64,7 @@ class ListContactController extends Controller
      */
     public function show(ListContact $listcontact)
     {
-        return view('pages.showContact', compact('listcontact'));
+        return view('pages.contact.showContact', compact('listcontact'));
     }
 
     /**
@@ -75,7 +75,7 @@ class ListContactController extends Controller
      */
     public function edit(ListContact $listcontact)
     {
-        return view('pages.editContact', compact('listcontact'));
+        return view('pages.contact.editContact', compact('listcontact'));
     }
 
     /**
@@ -87,7 +87,9 @@ class ListContactController extends Controller
      */
     public function update(Request $request, ListContact $listcontact)
     {
+        // creation variable $validated defaut 0
         $validated = 0;
+        // vérification si le user a cliqué dur valider  
         if($request->has('is_validated')){
             $validated=1;
         }

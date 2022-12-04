@@ -20,8 +20,6 @@ module.exports = {
                 bluehover: "#093d53",
                 goldhover: "#f8d696",
                 graybg: "#ecedee",
-
-                violetnav: "#8583e1",
             },
         },
     },

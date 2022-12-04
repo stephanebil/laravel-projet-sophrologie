@@ -3,8 +3,8 @@
         <div class="py-8">
             <p class="font-bold uppercase py-3">A propos</p>
             <ul class="">
-                <a href="" class="hover:text-[#f8d696]"><li class="">Qui suis-je ?</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">Tarif ?</li></a>
+                <a href="{{ route('quisuisje') }}" class="hover:text-[#f8d696]"><li class="">Qui suis-je ?</li></a>
+                <a href="{{ route('tarif') }}" class="hover:text-[#f8d696]"><li class="">Tarif ?</li></a>
                 <a href="" class="hover:text-[#f8d696]"<li class="">Politique de confidentialité</li>></a>
                 <a href="" class="hover:text-[#f8d696]"><li class="">Mentions Légales</li></a>
             </ul>
@@ -12,12 +12,12 @@
         <div class="py-8">
             <p class="font-bold uppercase py-3">Comment me joindre?</p>
             <ul class="">
-                <a href="" class="hover:text-[#f8d696]"><li class="">Contact</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">facebook</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">Tik Tok</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">Instagram</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">Happy and Bio Blog</li></a>
-                <a href="" class="hover:text-[#f8d696]"><li class="">H&P Wellness Concept (la boutique)</li></a>
+                <a href="{{ route('contact') }}" class="hover:text-[#f8d696]"><li class="">Contact</li></a>
+                <a href="https://fr-fr.facebook.com/happyandbio.fr/" class="hover:text-[#f8d696]" target="_blank"><li class="" ><i class="fa-brands fa-facebook"></i></li></a>
+                <a href="https://www.tiktok.com/@happyandbio?lang=fr" class="hover:text-[#f8d696]" target="_blank"><li class=""><i class="fa-brands fa-tiktok"></i></li></a>
+                <a href="https://www.instagram.com/happyandbio/?hl=fr" class="hover:text-[#f8d696]" target="_blank"><li class=""><i class="fa-brands fa-instagram"></i></li></a>
+                <a href="https://www.happyandbio.fr/" class="hover:text-[#f8d696]" target="_blank"><li class="">Happy and Bio Blog</li></a>
+                <a href="https://happyandbio.com/fr/" class="hover:text-[#f8d696]" target="_blank"><li class="">H&P Wellness Concept (la boutique)</li></a>
             </ul>
         </div>
         <div class="py-8">

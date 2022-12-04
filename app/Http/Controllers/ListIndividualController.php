@@ -15,7 +15,7 @@ class ListIndividualController extends Controller
     public function index()
     {
         $listindividuals = ListIndividual::orderBy('created_at', 'DESC')->paginate(10);
-        return view('pages.listIndividual', compact("listindividuals"));
+        return view('pages.individual.listIndividual', compact("listindividuals"));
     }
 
     /**
@@ -25,7 +25,7 @@ class ListIndividualController extends Controller
      */
     public function create()
     {
-        return view('pages.createIndividual');
+        return view('pages.individual.createIndividual');
     }
 
     /**
@@ -67,7 +67,7 @@ class ListIndividualController extends Controller
      */
     public function show(ListIndividual $listindividual)
     {
-        return view('pages.showIndividual', compact('listindividual'));
+        return view('pages.individual.showIndividual', compact('listindividual'));
     }
 
     /**
@@ -78,7 +78,7 @@ class ListIndividualController extends Controller
      */
     public function edit(ListIndividual $listindividual)
     {
-        return view('pages.editIndividual', compact('listindividual'));
+        return view('pages.individual.editIndividual', compact('listindividual'));
     }
 
     /**

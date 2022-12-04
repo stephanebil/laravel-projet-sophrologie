@@ -1,5 +1,5 @@
 @props(['url_img', 'title', 'content', 'author','updated_at'])
-<div class="p-4 bg-graybg hover:bg-white rounded-lg shadow-lg my-8   ">
+<div class="p-4 bg-graybg hover:bg-white rounded-lg shadow-lg my-8 duration-300  ">
     <img src="{{ asset('storage/' . $url_img ) }}" alt="{{ $title }}" class=" rounded-lg ">
     <div class="text-center py-4">
         <p class="text-goldfirst font-bold text-lg">{{ $title }}</p>

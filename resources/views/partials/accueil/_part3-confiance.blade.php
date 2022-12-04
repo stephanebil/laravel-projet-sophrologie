@@ -1,5 +1,7 @@
 <section class="px-6 md:px-20 xl:px-96 py-24 ">
-   <div class="swiper mySwiper">
+    <div class="py-6"><x-items.h2sophro title="Témoignages"/></div>
+    
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
             <x-confiance.cardTestimony img='confiance1.jpg' name="Rosalie Dupont" text="Merci Valérie. Vos séances individuelles m'ont sauvé la vie!"/>

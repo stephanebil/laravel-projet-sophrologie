@@ -15,7 +15,7 @@ class ListGroupController extends Controller
     public function index()
     {
         $listgroups = ListGroup::orderBy('created_at', 'DESC')->paginate(10);
-        return view('pages.listGroup', compact("listgroups"));
+        return view('pages.group.listGroup', compact("listgroups"));
     }
 
     /**
@@ -25,7 +25,7 @@ class ListGroupController extends Controller
      */
     public function create()
     {
-        return view('pages.createGroup');
+        return view('pages.group.createGroup');
     }
 
     /**
@@ -67,7 +67,7 @@ class ListGroupController extends Controller
      */
     public function show(ListGroup $listgroup)
     {
-        return view('pages.showGroup', compact('listgroup'));
+        return view('pages.group.showGroup', compact('listgroup'));
     }
 
     /**
@@ -78,7 +78,7 @@ class ListGroupController extends Controller
      */
     public function edit(ListGroup $listgroup)
     {
-        return view('pages.editGroup', compact('listgroup'));
+        return view('pages.group.editGroup', compact('listgroup'));
     }
 
     /**
