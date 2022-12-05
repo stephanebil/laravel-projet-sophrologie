@@ -15,7 +15,6 @@
                     </div>
                 </div>
             </a>
-        
             
             <a href="{{ route('listgroups.create') }}" class="block bg-goldfirst my-4 rounded-3xl h-[300px]  md:h-[400px] hover:bg-goldhover duration-300 sm:w-[50%] shadow-xl hover:shadow-none">    
                 <div class="">
@@ -29,7 +28,6 @@
             </a>
     </section> 
     
-     
     <section class="px-20">   
         <div class="md:flex md:space-x-16 text-center py-16 md:py-20 justify-center ">
             <div class="py-4">

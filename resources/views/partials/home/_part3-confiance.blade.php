@@ -25,9 +25,6 @@
             <x-confiance.cardTestimony img='confiance7.jpg' name="Norbert Chang" text="Un grand Merci à vous. Partout où je suis, je ris."/>
         </div>
       </div>
-      {{-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div> --}}
     </div>
 
     <!-- Swiper JS -->

@@ -20,7 +20,6 @@ return new class extends Migration
             $table->integer('phone_number');
             $table->string('address');
             $table->text('message');
-            $table->boolean("is_published")->default(0);
             $table->boolean("is_validated")->default(0);
             $table->timestamps();
         });

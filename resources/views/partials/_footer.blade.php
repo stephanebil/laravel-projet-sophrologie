@@ -22,7 +22,6 @@
         </div>
         <div class="py-8">
             <p class="font-bold uppercase py-3">Valérie Delcourt Sophrologue</p>
-            
             <p class="">9 rue de la Garde</p>
             <p class="">76000 Rouen</p>
             <p class="">tel: 06 12 34 56 78</p>
