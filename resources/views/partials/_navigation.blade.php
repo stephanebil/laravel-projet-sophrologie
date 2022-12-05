@@ -3,7 +3,6 @@
         {{-- logo --}}
         <div class="text-xl font-bold text-center px-2 py-1 border-b-2 border-goldfirst rounded-lg bg-bluefirst">
             <a href="/" class="">
-                {{-- <img src="../storage/cover/logo-valerie-sophro.jpg" alt="logo Valerie Delcout Sophrologie" class=" w-32"> --}}
                 <div class="font-light text-sm italic"><span class="text-goldhover font-bold text-lg">V</span>alérie <span class="text-goldhover font-bold text-lg">D</span>elcourt</div>
                 <div class="uppercase text-goldhover">Sophrologue</div>
             </a>
