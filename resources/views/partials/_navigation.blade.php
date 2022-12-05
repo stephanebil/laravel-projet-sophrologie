@@ -1,10 +1,11 @@
 <nav class="lg:flex lg:justify-between bg-bluefirst text-goldfirst items-center py-5 px-6 w-full md:px-20 fixed z-50  top-0 ">
     <div class="flex justify-between items-center">
         {{-- logo --}}
-        <div class="text-xl font-bold text-center px-2 py-1 border-2 border-goldfirst rounded-lg bg-bluefirst">
+        <div class="text-xl font-bold text-center px-2 py-1 border-b-2 border-goldfirst rounded-lg bg-bluefirst">
             <a href="/" class="">
-                <div class="">Valérie Delcourt</div>
-                <div class="">Sophrologue</div>
+                {{-- <img src="../storage/cover/logo-valerie-sophro.jpg" alt="logo Valerie Delcout Sophrologie" class=" w-32"> --}}
+                <div class="font-light text-sm italic"><span class="text-goldhover font-bold text-lg">V</span>alérie <span class="text-goldhover font-bold text-lg">D</span>elcourt</div>
+                <div class="uppercase text-goldhover">Sophrologue</div>
             </a>
         </div>
         {{-- hamburger --}}

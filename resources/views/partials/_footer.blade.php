@@ -12,7 +12,7 @@
         <div class="py-8">
             <p class="font-bold uppercase py-3">Comment me joindre?</p>
             <ul class="">
-                <a href="{{ route('contact') }}" class="hover:text-[#f8d696]"><li class="">Contact</li></a>
+                <a href="{{ route('listcontacts.create') }}" class="hover:text-[#f8d696]"><li class="">Contact</li></a>
                 <a href="https://fr-fr.facebook.com/happyandbio.fr/" class="hover:text-[#f8d696]" target="_blank"><li class="" ><i class="fa-brands fa-facebook"></i></li></a>
                 <a href="https://www.tiktok.com/@happyandbio?lang=fr" class="hover:text-[#f8d696]" target="_blank"><li class=""><i class="fa-brands fa-tiktok"></i></li></a>
                 <a href="https://www.instagram.com/happyandbio/?hl=fr" class="hover:text-[#f8d696]" target="_blank"><li class=""><i class="fa-brands fa-instagram"></i></li></a>
