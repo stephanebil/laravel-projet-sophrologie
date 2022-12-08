@@ -4,7 +4,7 @@
         <div class="pt-5">
             <p class="text-gray-500 italic">{{ $listcontact->updated_at }}</p>
             <p class="text-bluefirst py-6">{!! nl2br(e($listcontact->message)) !!}</p>
-            <p class="text-bluefirst font-bold">Email: <span class="text-goldfirst"><a href="https://accounts.google.com/" target="_blank" class="">{{ $listcontact->email }}</a></span></p>
+            <p class="text-bluefirst font-bold">Email: <span class="text-goldfirst"><a href="https://accounts.google.com/" target="_blank" class="hover:text-lg duration-300">{{ $listcontact->email }}</a></span></p>
         </div>
         <div class="py-6 md:py-16">
             <x-items.buttonsophro title="Retour à la liste de Prise de contact"  href="{{ route('listContact') }}" />

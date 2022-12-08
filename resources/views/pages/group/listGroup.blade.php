@@ -18,6 +18,7 @@
                                 <th>modifier</th>
                                 <th>Supprimer</th>
                                 <th>Traité</th>
+                                <th>En cours</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,11 +27,11 @@
                                     <th> {{ $listgroup->id }} </th>
                                     <td> {{ $listgroup->name }} </td>
                                     <td>
-                                        <a href="https://accounts.google.com/" target="_blank" class="">{{ $listgroup->email }}</a>  
+                                        <a href="https://accounts.google.com/" target="_blank" class="text-goldfirst hover:text-lg duration-300">{{ $listgroup->email }}</a>  
                                     </td>
                                     <td> {{ $listgroup->phone_number }} </td>
                                     <td>
-                                        <a href="listgroups/{{ $listgroup->id }}" class="hover:font-bold hover:text-xl">voir</a>
+                                        <a href="listgroups/{{ $listgroup->id }}" class="hover:font-bold hover:text-lg duration-300">voir</a>
                                     </td>
                                     <td>
                                         {{-- update --}}
@@ -41,9 +42,14 @@
                                         <x-items.btn-delete :item="$listgroup" routeItem="listgroups.destroy" />
                                     </td>
                                     @if ($listgroup->is_validated == 0)
-                                        <td><p class="text-red-500">Non</p></td>  
+                                        <td><p class="text-bluefirst">Non</p></td>  
                                     @else
-                                        <td> <p class="text-green-500">Oui</p></td>
+                                        <td> <p class="text-green-500 text-xl font-bold">Oui</p></td>
+                                    @endif
+                                    @if ($listgroup->in_process == 0)
+                                        <td><p class="text-bluefirst">Non</p></td>  
+                                    @else
+                                        <td> <p class="text-orange-500 text-xl font-bold">Oui</p></td>
                                     @endif
                                 </tr>
                             @endforeach

@@ -4,7 +4,7 @@
         <div class="pt-5">
             <p class="text-gray-500 italic">{{ $listindividual->updated_at }}</p>
             <p class="text-bluefirst py-6">{!! nl2br(e($listindividual->message)) !!}</p>
-            <p class="text-bluefirst font-bold">Email: <span class="text-goldfirst"><a href="https://accounts.google.com/" target="_blank" class="">{{ $listindividual->email }}</a></span></p>
+            <p class="text-bluefirst font-bold">Email: <span class="text-goldfirst"><a href="https://accounts.google.com/" target="_blank" class="hover:text-lg duration-300">{{ $listindividual->email }}</a></span></p>
             <p class="text-bluefirst font-bold">Tel: <span class="text-goldfirst">{{ $listindividual->phone_number }}</span></p>
             <p class="text-bluefirst font-bold">Adresse: <span class="text-goldfirst">{{ $listindividual->address }}</span></p>
         </div>

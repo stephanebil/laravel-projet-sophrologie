@@ -14,7 +14,7 @@ class ListGroupController extends Controller
      */
     public function index()
     {
-        $listgroups = ListGroup::orderBy('created_at', 'DESC')->paginate(10);
+        $listgroups = ListGroup::orderBy('name')->paginate(10);
         return view('pages.group.listGroup', compact("listgroups"));
     }
 
@@ -95,6 +95,9 @@ class ListGroupController extends Controller
             $validated=1;
         }
         
+        $process = 0;
+        if($request->has('in_process'))
+            $process=1;
         
         // validation
         $request->validate([
@@ -113,6 +116,7 @@ class ListGroupController extends Controller
             'address' => $request->address,
             'message' => $request->message,
             'is_validated' => $validated,
+            'in_process' => $process,
             'updated_at'=> now()
         ]);
 

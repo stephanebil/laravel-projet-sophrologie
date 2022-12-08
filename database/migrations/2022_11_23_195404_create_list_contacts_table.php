@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email');
             $table->text('message');
             $table->boolean("is_validated")->default(0);
+            $table->boolean("in_process")->default(0);
             $table->timestamps();
         });
     }

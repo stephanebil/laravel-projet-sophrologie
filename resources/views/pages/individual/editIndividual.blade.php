@@ -5,7 +5,7 @@
 
 <x-layouts.main-layout title="Modification RDV individuel" >
  
-     <div class="px-6 md:px-20 py-32">
+     <section class="px-6 md:px-20 py-32">
        <h1 class="py-20 font-bold text-xl text-center md:text-4xl lg:text-6xl text-bluefirst ">Modifier un Rendez-vous individuel</h1>
        <form action="{{ route('listindividuals.update', $listindividual->id) }}" enctype="multipart/form-data" method="POST">
             @csrf
@@ -34,9 +34,13 @@
                         <label for="">Validation</label>
                         <input @checked(old('is_validated', $listindividual->is_validated)) name="is_validated" type="checkbox" value="is_validated">
                 </div>
+                <div class="py-6">
+                        <label for="">En traitement</label>
+                        <input @checked(old('in_process', $listindividual->in_process)) name="in_process" type="checkbox" value="in_process">
+                </div>
             
             <button type="submit" class="text-xs font-semibold py-2 px-3 md:text-base md:py-4 md:px-6 md:font-bold text-goldfirst bg-bluefirst rounded-lg hover:bg-goldhover hover:text-bluehover duration-300">Envoyer</button>
         </form>
-    </div>
+    </section>
 
 </x-layouts.main-layout>

@@ -18,6 +18,7 @@
                                 <th>modifier</th>
                                 <th>Supprimer</th>
                                 <th>Traité</th>
+                                <th>En cours</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,11 +27,11 @@
                                     <th> {{ $listindividual->id }} </th>
                                     <td> {{ $listindividual->name }} </td>
                                     <td>
-                                        <a href="https://accounts.google.com/" target="_blank" class="">{{ $listindividual->email }}</a>  
+                                        <a href="https://accounts.google.com/" target="_blank" class="text-goldfirst hover:text-lg duration-300">{{ $listindividual->email }}</a>  
                                     </td>
                                     <td> {{ $listindividual->phone_number }} </td>
                                     <td>
-                                        <a href="listindividuals/{{ $listindividual->id }}" class="hover:font-bold hover:text-xl">voir</a>
+                                        <a href="listindividuals/{{ $listindividual->id }}" class="hover:font-bold hover:text-lg duration-300">voir</a>
                                     </td>
                                     <td>
                                         {{-- update --}}
@@ -41,9 +42,14 @@
                                         <x-items.btn-delete :item="$listindividual" routeItem="listindividuals.destroy" />
                                     </td>
                                     @if ($listindividual->is_validated == 0)
-                                        <td><p class="text-red-500">Non</p></td>  
+                                        <td><p class="text-bluefirst">Non</p></td>  
                                     @else
-                                        <td> <p class="text-green-500">Oui</p></td>
+                                        <td> <p class="text-green-500 text-xl font-bold">Oui</p></td>
+                                    @endif
+                                    @if ($listindividual->in_process == 0)
+                                        <td><p class="text-bluefirst">Non</p></td>  
+                                    @else
+                                        <td> <p class="text-orange-500 text-xl font-bold">Oui</p></td>
                                     @endif
                                 </tr>
                             @endforeach

@@ -14,7 +14,7 @@ class ListContactController extends Controller
      */
     public function index()
     {
-        $listcontacts = ListContact::orderBy('created_at', 'DESC')->paginate(10);
+        $listcontacts = ListContact::orderBy('name')->paginate(10);
         
         return view('pages.contact.listContact', compact("listcontacts"));
     }
@@ -89,10 +89,14 @@ class ListContactController extends Controller
     {
         // creation variable $validated defaut 0
         $validated = 0;
-        // vérification si le user a cliqué dur valider  
+        // verification if the user is clicking  on "valider"  
         if($request->has('is_validated')){
             $validated=1;
         }
+
+        $process = 0;
+        if($request->has('in_process'))
+            $process=1;
         
         // validation
         $request->validate([
@@ -107,6 +111,7 @@ class ListContactController extends Controller
             'email' =>$request->email,
             'message' =>$request->message,
             'is_validated' => $validated,
+            'in_process' => $process,
             'updated_at'=> now()
         ]);
 

@@ -14,7 +14,7 @@ class ListIndividualController extends Controller
      */
     public function index()
     {
-        $listindividuals = ListIndividual::orderBy('created_at', 'DESC')->paginate(10);
+        $listindividuals = ListIndividual::orderBy('name')->paginate(10);
         return view('pages.individual.listIndividual', compact("listindividuals"));
     }
 
@@ -94,6 +94,10 @@ class ListIndividualController extends Controller
         if($request->has('is_validated')){
             $validated=1;
         }
+
+        $process = 0;
+        if($request->has('in_process'))
+            $process=1;
         
         // validation
         $request->validate([
@@ -112,6 +116,7 @@ class ListIndividualController extends Controller
             'address' => $request->address,
             'message' => $request->message,
             'is_validated' => $validated,
+            'in_process' => $process,
             'updated_at'=> now()
         ]);
 
