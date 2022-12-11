@@ -87,9 +87,9 @@ class ListContactController extends Controller
      */
     public function update(Request $request, ListContact $listcontact)
     {
-        // creation variable $validated defaut 0
+        // create variable $validated defaut 0
         $validated = 0;
-        // verification if the user is clicking  on "valider"  
+        // check if the user is clicking  on "valider"  
         if($request->has('is_validated')){
             $validated=1;
         }
