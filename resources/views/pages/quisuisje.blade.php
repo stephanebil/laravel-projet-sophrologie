@@ -1,5 +1,4 @@
 <x-layouts.main-layout title="Qui suis-je" >
- 
     <section class="px-6 md:px-20 pt-20 md:pt-32 md:pb-20 pb-6">
         <h1 class="py-20 font-bold text-xl text-center md:text-4xl lg:text-6xl text-bluefirst">Qui suis-je ?</h1>
         <p class="text-center text-bluefirst font-bold sm:px-10 md:px-20 lg:px-60 xl:px-72 ] ">Au commencement de Sophro au Naturel, il y a moi : Valérie Delcourt.</p>
@@ -13,7 +12,6 @@
                 <p class="text-center text-bluefirst font-bold py-8">Auparavant, j’ai travaillé 10 ans en tant qu’assistante commerciale pour l’Export dans des entreprises et des multinationales. J’ai connu les chiffres et les objectifs, l’organisation de salons à l’étranger, les papiers et les procédures…</p>
                 <p class="text-center text-bluefirst py-4">Puis, je deviens sophrologue. Ces deux métiers reflètent deux passions qui m’animent. Ces deux techniques de bien-être et de développement personnel me semblent tellement essentiels à cultiver pour être véritable bien avec soi, avec son corps et son mental.</p>
             </div>
-            
             <img src="img/valeriedelcourt2.jpg" alt="Valérie Delcourt" class=" lg:w-[45%] sm: mt-4 rounded-full px-[10%] sm:px-[15%] lg:px-0">
         </div>
     </section> 
@@ -27,5 +25,4 @@
             </div>
         </div>
     </section>
-
 </x-layouts.main-layout>

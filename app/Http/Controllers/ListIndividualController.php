@@ -90,7 +90,9 @@ class ListIndividualController extends Controller
      */
    public function update(Request $request, ListIndividual $listindividual)
     {
+         // create variable $validated defaut 0
         $validated = 0;
+        // check if the user is clicking  on "valider" 
         if($request->has('is_validated')){
             $validated=1;
         }

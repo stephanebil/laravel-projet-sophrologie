@@ -29,7 +29,6 @@
             <div class="py-6 ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.468327325918!2d1.0913751504730345!3d49.437864886290036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de79394be26f%3A0xcf7cbe4c0de6e409!2s9%20Rue%20de%20la%20R%C3%A9publique%2C%2076000%20Rouen!5e0!3m2!1sfr!2sfr!4v1670726823482!5m2!1sfr!2sfr" width="270" height="200" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
         </div>
     </div>    
 </footer>

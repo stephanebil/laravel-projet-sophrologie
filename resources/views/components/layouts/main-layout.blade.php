@@ -25,11 +25,9 @@
             {{ Session::get('status') }}
         </div>
     </div>
-    
     <div class="flex flex-col ">
         <main className='flex-grow bg-[#fffcfa]'>{{ $slot }}</main>
     </div>
-    
     @include('partials._footer')
     @vite('resources/js/app.js')
 </body>
