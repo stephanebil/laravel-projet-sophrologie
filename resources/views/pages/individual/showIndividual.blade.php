@@ -11,7 +11,6 @@
         <div class="py-6 md:py-16">
             <x-items.buttonsophro title="Retour à la liste de Prise de RDV individuel"  href="{{ route('listIndividual') }}" />
         </div>
-        
         <div class="py-8 flex space-x-5 gap-6 justify-center">
             <a href="{{ route('listindividuals.edit', $listindividual->id) }}" class=" bg-bluehover text-goldhover duration-300 hover:bg-green-600 hover:text-white p-2 rounded-lg">Modifier</a>
             <x-items.btn-delete :item="$listindividual" routeItem="listindividuals.destroy" />

@@ -1,6 +1,5 @@
 <section class="px-6 md:px-20 xl:px-96 py-24 ">
     <div class="py-6"><x-items.h2sophro title="Témoignages"/></div>
-    
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -26,7 +25,6 @@
         </div>
       </div>
     </div>
-
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

@@ -1,5 +1,4 @@
 <x-layouts.main-layout title="Tarif" >
- 
     <section class="px-6 md:px-20 pt-16 sm:pt-20 md:pt-32 md:pb-20 pb-6">
         <h1 class="py-20 font-bold text-xl text-center md:text-4xl lg:text-6xl text-bluefirst">Tarif</h1>
         <p class="text-center text-bluefirst md:w-[60%] md:ml-[20%] ">Toute séance non décommandée 48h à l’avance sera due (aucun remboursement possible).</p>
@@ -15,7 +14,6 @@
                     </div>
                 </div>
             </a>
-            
             <a href="{{ route('listgroups.create') }}" class="block bg-goldfirst my-4 rounded-3xl h-[300px]  md:h-[400px] hover:bg-goldhover duration-300 sm:w-[50%] shadow-xl hover:shadow-none">    
                 <div class="">
                     <h2 class="pt-10 pb-4 md:py-20 font-bold text-xl text-center  md:text-2xl lg:text-4xl text-bluefirst">Séance Groupe</h2>
@@ -27,7 +25,6 @@
                 </div>
             </a>
     </section> 
-    
     <section class="px-20">   
         <div class="md:flex md:space-x-16 text-center py-16 md:py-20 justify-center ">
             <div class="py-4">
@@ -42,5 +39,4 @@
         <img src="img/deroulementsmall.jpg" alt="paysage" class="w-full md:h-0">
         <img src="img/deroulement2small.jpg" alt="paysage" class="h-0 md:h-full md:w-full">
     </section>
-
 </x-layouts.main-layout>

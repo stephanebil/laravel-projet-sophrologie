@@ -1,5 +1,4 @@
 <x-layouts.main-layout title="La Sophrologie" >
- 
     <div class="">
         <x-formatpages.formatpage 
         titleprincipal="Qu'est ce que la sophrologie?" 
