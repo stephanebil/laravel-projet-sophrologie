@@ -21,7 +21,7 @@
     <div class="relative">
         @include('partials._navigation')
         {{-- message de confirmation --}}
-        <div class=" absolute z-200 mt-32 rounded-lg ml-6 sm:ml-[25%] text-center w-52 bg-green-500 text-green-100">
+        <div class=" absolute z-200 mt-32 rounded-lg ml-6 sm:ml-[25%]  text-center w-52 md:w-[60%] bg-green-500 text-green-100">
             {{ Session::get('status') }}
         </div>
     </div>

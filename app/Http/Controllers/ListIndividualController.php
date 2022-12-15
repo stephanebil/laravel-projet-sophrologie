@@ -56,7 +56,7 @@ class ListIndividualController extends Controller
         ]);
 
         // redirect
-        return redirect()->route('listindividuals.create')->with('status', "Merci d'avoir pris rendez vous, votre message a bien été enregistré, je vous contacte le plus rapidement possible, très belle journée à vous. Valérie");
+        return redirect()->route('listindividuals.create')->with('status', "Merci d'avoir pris rendez-vous, votre message a bien été enregistré. Je vous contacte le plus rapidement possible, très belle journée à vous. Valérie");
     }
 
     /**
