@@ -9,7 +9,7 @@
                 </a>
             </div>
             @empty
-                <p class="">Pas de blog pou l'instant.</p> 
+                <p class="">Pas d'article dans le blog pour l'instant.</p> 
             @endforelse
         </div>
         <div class="">
